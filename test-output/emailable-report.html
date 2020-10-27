@@ -25,21 +25,116 @@ td,th {border:1px solid #009;padding:.25em .5em}
 <body>
 <table cellspacing="0" cellpadding="0" class="testOverview">
 <tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em"><a href="#t1">FoodCoAutomationTest</a></td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi">0</td><td class="numi">91.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">FoodCoAutomationTest</a></td><td class="numi">7</td><td class="numi">7</td><td class="numi">0</td><td class="numi_attn">3</td><td class="numi">267.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr id="t1"><th colspan="5">FoodCoAutomationTest &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="3">login.LoginTests</td><td><a href="#m1"><b>testSelectLocation</b>  </a></td><td class="numi">1</td><td>1603428268967</td><td class="numi">9661</td></tr><tr class="passedodd"><td><a href="#m2"><b>testClickSignIn</b>  </a></td><td class="numi">1</td><td>1603428278763</td><td class="numi">5431</td></tr><tr class="passedodd"><td><a href="#m3"><b>testVerifyLogin</b>  </a></td><td class="numi">1</td><td>1603428284202</td><td class="numi">16715</td></tr>
-<tr class="passedeven"><td>setup.setUpTests</td><td><a href="#m4"><b>testSetUp</b>  </a></td><td class="numi">1</td><td>1603428300917</td><td class="numi">0</td></tr>
+<tr id="t1"><th colspan="5">FoodCoAutomationTest &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="3">login.LoginTests</td><td><a href="#m1"><b>testClickStandingFan</b>  </a></td><td class="numi">1</td><td>1603795459459</td><td class="numi">14192</td></tr><tr class="failedodd"><td><a href="#m2"><b>testClickClipper</b>  </a></td><td class="numi">1</td><td>1603795473792</td><td class="numi">10078</td></tr><tr class="failedodd"><td><a href="#m3"><b>testClickRechargeableFan</b>  </a></td><td class="numi">1</td><td>1603795486057</td><td class="numi">10010</td></tr>
+<tr><th colspan="5">FoodCoAutomationTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="6">login.LoginTests</td><td><a href="#m4"><b>testSelectLocation</b>  </a></td><td class="numi">1</td><td>1603795396998</td><td class="numi">14143</td></tr><tr class="passedodd"><td><a href="#m5"><b>testClickSignIn</b>  </a></td><td class="numi">1</td><td>1603795411296</td><td class="numi">6229</td></tr><tr class="passedodd"><td><a href="#m6"><b>testVerifyLogin</b>  </a></td><td class="numi">1</td><td>1603795417525</td><td class="numi">22690</td></tr><tr class="passedodd"><td><a href="#m7"><b>testClickHousehold</b>  </a></td><td class="numi">1</td><td>1603795440215</td><td class="numi">10756</td></tr><tr class="passedodd"><td><a href="#m8"><b>testClickHomeAppliances</b>  </a></td><td class="numi">1</td><td>1603795450971</td><td class="numi">8488</td></tr><tr class="passedodd"><td><a href="#m9"><b>testClickLogout</b>  </a></td><td class="numi">1</td><td>1603795496692</td><td class="numi">19409</td></tr>
+<tr class="passedeven"><td>setup.setUpTests</td><td><a href="#m10"><b>testSetUp</b>  </a></td><td class="numi">1</td><td>1603795516103</td><td class="numi">1</td></tr>
 </table>
 <h1>FoodCoAutomationTest</h1>
-<h2 id="m1">login.LoginTests:testVerifyLogin</h2>
+<h2 id="m1">login.LoginTests:testClickStandingFan</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[2]/div/div[1]/div/div[3]/a[2]&quot;}
+  (Session info: chrome=86.0.4240.111)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0J1AU7B&apos;, ip: &apos;192.168.43.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c71f47a7c453996845f0d83f6bef6d4a
+*** Element info: {Using=xpath, value=/html/body/div[2]/div/div[1]/div/div[3]/a[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.HomeAppliancesPage.clickContinueShopping(HomeAppliancesPage.java:38)
+	at login.LoginTests.testClickStandingFan(LoginTests.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 29 stack frames</div>
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">login.LoginTests:testClickSignIn</h2>
+<h2 id="m2">login.LoginTests:testClickRechargeableFan</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/section[2]/div/div/div[2]/div[4]/div[3]/div/div[2]/form/button&quot;}
+  (Session info: chrome=86.0.4240.111)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0J1AU7B&apos;, ip: &apos;192.168.43.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c71f47a7c453996845f0d83f6bef6d4a
+*** Element info: {Using=xpath, value=/html/body/section[2]/div/div/div[2]/div[4]/div[3]/div/div[2]/form/button}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.HomeAppliancesPage.clickRechargeableFan(HomeAppliancesPage.java:33)
+	at login.LoginTests.testClickRechargeableFan(LoginTests.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 29 stack frames</div>
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">login.LoginTests:testSelectLocation</h2>
+<h2 id="m3">login.LoginTests:testClickClipper</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/section[2]/div/div/div[2]/div[4]/div[2]/div/div[2]/form/button&quot;}
+  (Session info: chrome=86.0.4240.111)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0J1AU7B&apos;, ip: &apos;192.168.43.40&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50325}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: c71f47a7c453996845f0d83f6bef6d4a
+*** Element info: {Using=xpath, value=/html/body/section[2]/div/div/div[2]/div[4]/div[2]/div/div[2]/form/button}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pageObjects.HomeAppliancesPage.clickClipper(HomeAppliancesPage.java:28)
+	at login.LoginTests.testClickClipper(LoginTests.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 29 stack frames</div>
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">setup.setUpTests:testSetUp</h2>
+<h2 id="m4">login.LoginTests:testSelectLocation</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">login.LoginTests:testClickHomeAppliances</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">login.LoginTests:testClickLogout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">login.LoginTests:testClickHousehold</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">login.LoginTests:testVerifyLogin</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">setup.setUpTests:testSetUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">login.LoginTests:testClickSignIn</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

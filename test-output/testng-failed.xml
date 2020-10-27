@@ -6,10 +6,10 @@
       <class name="login.LoginTests">
         <methods>
           <include name="quitBrowser"/>
+          <include name="testClickClipper"/>
+          <include name="testClickStandingFan"/>
           <include name="setUp"/>
-          <include name="testClickSignIn"/>
-          <include name="testSelectLocation"/>
-          <include name="testVerifyLogin"/>
+          <include name="testClickRechargeableFan"/>
         </methods>
       </class> <!-- login.LoginTests -->
     </classes>

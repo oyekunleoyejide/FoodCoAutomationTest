@@ -11,6 +11,7 @@ public class LoginPage {
     }
 
     private WebDriver driver;
+
     //Using By as a locator for identifying the login fields
     private By selectLocation = By.id("lagos");
     private By signIn = By.xpath("/html/body/div[1]/div/div/div[2]/ul/li[1]/a");
@@ -45,6 +46,7 @@ public class LoginPage {
         driver.findElement(loginButton).click();
         return new DashboardPage(driver);
     }
+
 
 
 

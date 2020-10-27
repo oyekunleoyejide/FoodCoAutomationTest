@@ -1,20 +1,28 @@
 package setup;
 
+import org.hamcrest.core.DescribedAs;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import pageObjects.DashboardPage;
+import pageObjects.HomeAppliancesPage;
+import pageObjects.HouseholdPage;
 import pageObjects.LoginPage;
 
+import javax.swing.plaf.basic.BasicSplitPaneUI;
 import java.util.concurrent.TimeUnit;
 
 public class setUps {
-    //Create Login object
-    protected LoginPage loginPage;
-
 
     //Create a webDriver object
     private WebDriver driver;
+
+    //Create Login object
+    protected LoginPage loginPage;
+    protected DashboardPage dashboardPage;
+    protected HouseholdPage householdPage;
+    protected HomeAppliancesPage homeAppliancesPage;
 
 
     @BeforeTest
@@ -35,17 +43,18 @@ public class setUps {
 
         //Instantiate landing page after launching the browser
         loginPage = new LoginPage(driver);
+        dashboardPage = new DashboardPage(driver);
+        householdPage = new HouseholdPage(driver);
+        homeAppliancesPage = new HomeAppliancesPage(driver);
 
     }
 
     @AfterTest
-        public void quitBrowser(){
-            driver.quit();
+        public void quitBrowser() throws InterruptedException{
+        //Wait for 5 seconds before executing the action
+        Thread.sleep(5000);
+        driver.quit();
         }
-    String pageURL = "https://foodco.ng/";
 
-    {
-        System.out.println("Account logged out. Page URL is " + pageURL);
-    }
 
 }
